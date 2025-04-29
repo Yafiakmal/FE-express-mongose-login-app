@@ -1,0 +1,15 @@
+services:
+  app:
+    image: node:latest
+    container_name: fe-express-mongose-login
+    working_dir: /usr/src/app
+    volumes:
+      - .:/usr/src/app
+    ports:
+      - "5173:5173"
+    environment:
+      - NODE_ENV=development
+    stdin_open: true
+    tty: true
+    command: bash -c "tail -f /dev/null"
+    
