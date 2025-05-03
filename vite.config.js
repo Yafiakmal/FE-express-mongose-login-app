@@ -11,10 +11,10 @@ export default defineConfig({
   build: {
     rollupOptions: {
       input: {
-        index:'pages/index.html',
-        dashboard: 'pages/dashboard.html',
-        login: 'pages/login.html',
-        register: 'pages/register.html',
+        index:'public/index.html',
+        dashboard: 'public/dashboard.html',
+        login: 'public/login.html',
+        register: 'public/register.html',
       },
     },
   }
